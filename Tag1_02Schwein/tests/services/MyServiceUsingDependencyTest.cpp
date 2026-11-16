@@ -65,3 +65,8 @@ TEST_F(MyServiceUsingDependencyTest, MockdemoBarFunc) {
     // Assertion
     EXPECT_THAT(result, Eq(9));
 }
+
+TEST_F(MyServiceUsingDependencyTest, ctor__nullptrDependency__throwsInvalidArgument) {
+    EXPECT_THAT([]() { MyServiceUsingDependency service{nullptr}; },
+                ThrowsMessage<std::invalid_argument>(Eq("Dependency darf nicht nullptr sein!")));
+}

@@ -6,14 +6,19 @@
 
 #include "Dependency.h"
 #include <algorithm>
+#include <memory>
+#include <stdexcept>
+#include <utility>
 
 class MyServiceUsingDependency {
 
-    IDependency &dependency;
+    std::unique_ptr<IDependency> dependency_;
 
 public:
-    explicit MyServiceUsingDependency(IDependency &dependency)
-        : dependency(dependency) {
+    // Sink-Parameter: Der Aufrufer muss das Eigentum explizit abgeben (std::move).
+    explicit MyServiceUsingDependency(std::unique_ptr<IDependency> dependency)
+        : dependency_(std::move(dependency)) {
+        if (!dependency_) throw std::invalid_argument("Dependency darf nicht nullptr sein!");
     }
 
     /*
@@ -24,7 +29,7 @@ public:
      */
     void f(std::string value) {
         transform(value.begin(), value.end(), value.begin(), ::toupper);
-        dependency.foo(value);
+        dependency_->foo(value);
 
 
     }
@@ -36,11 +41,11 @@ public:
     size_t g(std::string value) {
         value += " Welt";
 
-        return dependency.foobar(value) + 5;
+        return dependency_->foobar(value) + 5;
     }
 
     long h() {
-        const auto barValue = dependency.bar();
+        const auto barValue = dependency_->bar();
         return barValue * barValue;
 
     }
