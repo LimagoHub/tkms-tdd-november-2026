@@ -12,6 +12,10 @@ enable_testing()
 add_library(core STATIC
 	source/greeting.cpp
 		source/tiere/Schwein.h
+		source/services/IDependency.h
+		source/services/Dependency.h
+		source/services/MyServiceUsingDependency.h
+		source/services/ToDelete.h
 )
 target_include_directories(core PUBLIC source)
 

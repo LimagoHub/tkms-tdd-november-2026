@@ -11,7 +11,9 @@ endforeach()
 
 add_executable(SchweinProjectTest test.cpp
         tiere/SchweinTest.h
-		tiere/SchweinTest.cpp)
+		tiere/SchweinTest.cpp
+		services/MyServiceUsingDependencyTest.cpp
+		services/MyServiceUsingDependencyTest.h)
 target_link_libraries(SchweinProjectTest PRIVATE core GTest::gtest_main GTest::gmock)
 
 # Jeder TEST() erscheint einzeln in ctest und in der IDE
