@@ -23,18 +23,60 @@ TEST_F(StapelTest,isEmpty__NotEmptyStack__ReturnFalse) {
 
 TEST_F(StapelTest, push__FillUpToLimit__NoExceptionIsThrown) {
 
-        for (int i = 0; i < 10; i++) {
-            EXPECT_NO_THROW(objectUnderTest.push(1));
-        }
+    fillUpToLimit();
 
 
 }
 TEST_F(StapelTest, push__FillUpToLimit__StapelExceptionIsThrown) {
 
-    for (int i = 0; i < 10; i++) {
-        EXPECT_NO_THROW(objectUnderTest.push(1));
-    }
+    fillUpToLimit();
 
     EXPECT_THAT([&]() { this->objectUnderTest.push(1); },
                 ThrowsMessage<StapelException>(HasSubstr("Overflow")));
+}
+
+TEST_F(StapelTest, isFull__NotFullStack__ReturnFalse) {
+    // Arrange + Action
+    auto result = objectUnderTest.isFull();
+
+    // Assertion
+    EXPECT_THAT(result, IsFalse());
+}
+
+TEST_F(StapelTest, isFull__NineElements__ReturnFalse) {
+    // Arrange
+    for (int i = 0; i < 9; i++) {
+        objectUnderTest.push(1);
+    }
+
+    // Action
+    auto result = objectUnderTest.isFull();
+
+    // Assertion
+    EXPECT_THAT(result, IsFalse());
+}
+
+TEST_F(StapelTest, isFull__TenElements__ReturnTrue) {
+    // Arrange
+    fillUpToLimit();
+
+    // Action
+    auto result = objectUnderTest.isFull();
+
+    // Assertion
+    EXPECT_THAT(result, IsTrue());
+}
+
+TEST_F(StapelTest, isFull__FullStackAfterPop__ReturnFalse) {
+    // Arrange
+    for (int i = 0; i < 10; i++) {
+        objectUnderTest.push(1);
+    }
+    objectUnderTest.pop();
+
+    // Action
+    auto result = objectUnderTest.isFull();
+
+    // Assertion
+    EXPECT_THAT(result, IsFalse());
 }

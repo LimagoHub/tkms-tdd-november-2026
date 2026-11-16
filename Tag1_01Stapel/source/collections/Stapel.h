@@ -8,13 +8,14 @@
 class Stapel {
 
 private:
-    int data[10];
+    static constexpr int capacity{10};
+    int data[capacity];
     int index{0};
 public:
     Stapel() = default;
     auto push(int value)->void;
     auto pop()->int;
 
-    auto isEmpty()->bool const;
-    auto isFull()->bool const;
+    auto isEmpty() const -> bool;
+    auto isFull() const -> bool;
 };

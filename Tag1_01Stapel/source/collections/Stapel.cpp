@@ -14,10 +14,10 @@ auto Stapel::pop() -> int {
 
     return data[--index];
 }
-auto Stapel::isEmpty() -> bool const {
+auto Stapel::isEmpty() const -> bool {
     return index <= 0;
 }
 
-auto Stapel::isFull() -> bool const {
-    return index >= 10;
+auto Stapel::isFull() const -> bool {
+    return index >= capacity;
 }

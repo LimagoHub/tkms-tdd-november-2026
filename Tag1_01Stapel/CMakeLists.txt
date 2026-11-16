@@ -11,13 +11,17 @@ enable_testing()
 # Produktionscode als Bibliothek, damit Anwendung und Tests ihn gemeinsam nutzen
 add_library(core STATIC
 	source/greeting.cpp
+	source/collections/Stapel.cpp
 )
 target_include_directories(core PUBLIC source)
+if(MSVC)
+	target_compile_options(core PRIVATE /W4)
+else()
+	target_compile_options(core PRIVATE -Wall -Wextra)
+endif()
 
 add_executable(StapelProjekt source/main.cpp
-		source/collections/Stapel.cpp
-		source/collections/Stapel.h
-		source/collections/StapelException.h)
+		source/collections/WagnerStack.h)
 target_link_libraries(StapelProjekt PRIVATE core)
 
 # Tests
