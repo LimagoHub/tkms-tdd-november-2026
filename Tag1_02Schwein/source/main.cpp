@@ -2,6 +2,6 @@
 
 #include "greeting.hpp"
 
-int main() {
+auto main() -> int {
 	std::cout << greeting() << std::endl;
 }

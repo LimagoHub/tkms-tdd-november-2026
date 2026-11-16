@@ -9,7 +9,9 @@ foreach(dep gtest gmock gtest_main gmock_main)
 	set_target_properties(${dep} PROPERTIES FOLDER Dependencies)
 endforeach()
 
-add_executable(SchweinProjectTest test.cpp)
+add_executable(SchweinProjectTest test.cpp
+        tiere/SchweinTest.h
+		tiere/SchweinTest.cpp)
 target_link_libraries(SchweinProjectTest PRIVATE core GTest::gtest_main GTest::gmock)
 
 # Jeder TEST() erscheint einzeln in ctest und in der IDE

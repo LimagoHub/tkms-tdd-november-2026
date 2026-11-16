@@ -2,4 +2,4 @@
 
 #include <string>
 
-std::string greeting();
+auto greeting() -> std::string;

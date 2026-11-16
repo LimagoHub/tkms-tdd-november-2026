@@ -1,5 +1,5 @@
 #include "greeting.hpp"
 
-std::string greeting() {
+auto greeting() -> std::string {
 	return "Hallo";
 }
