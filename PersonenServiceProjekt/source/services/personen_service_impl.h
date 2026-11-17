@@ -33,7 +33,11 @@ public:
 
         if (person_.get_vorname().length() < 2 ) throw personen_service_exception{"Vorname zu kurz!"};
 
-        throw personen_service_exception{"Nachname zu kurz!"};
+        if (person_.get_nachname().length() < 2 ) throw personen_service_exception{"Nachname zu kurz!"};
+
+        throw personen_service_exception{"Unerwuensche Person"};
+
+        //repo_.save_or_update(person_);
     }
 
 
