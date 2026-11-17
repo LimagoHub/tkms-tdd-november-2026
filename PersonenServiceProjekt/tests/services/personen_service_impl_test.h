@@ -16,13 +16,15 @@ using namespace testing;
 class personen_service_impl_test: public Test{
 protected:
 
-    Mockpersonen_repository repoMock;
-    Mockblacklist_service blacklistServiceMock;
+    StrictMock<Mockpersonen_repository> repoMock;
+    NiceMock<Mockblacklist_service> blacklistServiceMock;
 
 
     personen_service_impl objectUnderTest{repoMock, blacklistServiceMock};
 
-
+    void SetUp() override {
+        ON_CALL(blacklistServiceMock, isBlacklisted).WillByDefault(Return(false));
+    }
 };
 
 

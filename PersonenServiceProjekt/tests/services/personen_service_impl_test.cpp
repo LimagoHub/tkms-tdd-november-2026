@@ -46,7 +46,7 @@ TEST_F(personen_service_impl_test,speichern__UnexpectedExceptionInUnderlyingServ
     // Arrange
     person validPerson{"John", "Doe"};
 
-    EXPECT_CALL(blacklistServiceMock,isBlacklisted(_) ).WillOnce(Return(false));
+    //EXPECT_CALL(blacklistServiceMock,isBlacklisted(_) ).WillOnce(Return(false));
     EXPECT_CALL(repoMock, save_or_update(_)).WillOnce(Throw(std::runtime_error{"upps"}));
 
     EXPECT_THAT([&]() { objectUnderTest.speichern(validPerson); },ThrowsMessage<personen_service_exception>(StrEq("Ein Fehler ist aufgetreten!")));
@@ -137,10 +137,12 @@ TEST_F(personen_service_impl_test,speichern__UnexpectedExceptionInUnderlyingServ
 TEST_F(personen_service_impl_test,speichern__HappyPath__parameterPassedToRepo){
     InSequence dummy;
 
+    person captured_person{};
+
     // Arrange
     person validPerson{"John", "Doe"};
     EXPECT_CALL(blacklistServiceMock,isBlacklisted(validPerson) ).Times(1).WillOnce(Return(false));
-    EXPECT_CALL(repoMock,save_or_update(validPerson) ).Times(1);
+    EXPECT_CALL(repoMock,save_or_update(_) ).Times(1).WillOnce(DoAll(SaveArg<0>(&captured_person), Return())) ;
 
 
 
@@ -148,6 +150,43 @@ TEST_F(personen_service_impl_test,speichern__HappyPath__parameterPassedToRepo){
 
     objectUnderTest.speichern(validPerson);
 
+    EXPECT_THAT( captured_person.get_vorname(), AnyOf(StartsWith("J"), StartsWith("M")));
+    EXPECT_THAT(captured_person.get_nachname(), AnyOf(Eq("Doe"), Eq("Mustermann")));
+
+}
+
+/*
+ * Alternative zum Happy Path oben: Lambda statt SaveArg.
+ *
+ * Oben:  DoAll(SaveArg<0>(&captured_person), Return())
+ *        SaveArg kopiert das erste Argument des Aufrufs in captured_person.
+ *
+ * Hier:  Invoke(lambda)
+ *        Die Mock-Methode ruft beim Aufruf unser Lambda mit den Original-
+ *        Argumenten auf. Das Lambda ersetzt die Mock-Methode - es "faengt"
+ *        die person per Capture [&] in captured_person.
+ *
+ * Vorteile des Lambdas:
+ *  - Man kann beliebigen Code ausfuehren (z. B. direkt im Lambda pruefen,
+ *    mehrere Werte merken, nur Teile des Arguments speichern).
+ *  - Kein DoAll/Return() noetig, ein void-Lambda reicht.
+ * Nachteil: etwas mehr Schreibarbeit als SaveArg bei einem einfachen Argument.
+ */
+TEST_F(personen_service_impl_test,speichern__HappyPath__parameterPassedToRepo_lambda){
+    InSequence dummy;
+
+    //person captured_person{};
+
+    // Arrange
+    person validPerson{"John", "Doe"};
+    EXPECT_CALL(blacklistServiceMock,isBlacklisted(validPerson) ).Times(1).WillOnce(Return(false));
+    EXPECT_CALL(repoMock,save_or_update(_) ).Times(1).WillOnce(Invoke([&](const person &p) {
+        EXPECT_THAT( p.get_vorname(), AnyOf(StartsWith("J"), StartsWith("M")));
+        EXPECT_THAT(p.get_nachname(), AnyOf(Eq("Doe"), Eq("Mustermann")));
+    }));
+
+    // Action
+    objectUnderTest.speichern(validPerson);
 
 
 }

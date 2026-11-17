@@ -25,6 +25,7 @@ public:
         int move = moves[stones % 4];
         writer.write( "Computer nimmt " + std::to_string(move) + " Steine");
 
+
         return move;
     }
 };

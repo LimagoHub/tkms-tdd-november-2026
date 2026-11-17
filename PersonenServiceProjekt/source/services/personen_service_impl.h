@@ -19,12 +19,14 @@ class personen_service_impl : public personen_service{
 
         if (blacklistService.isBlacklisted(person_) ) throw personen_service_exception{"Unerwuensche Person"};
 
+        person_.set_id("ABCD");
         repo_.save_or_update(person_);
     }
 
 public:
     personen_service_impl(personen_repository &repo, blacklist_service &blacklist_service)
         : repo_(repo),
+
           blacklistService(blacklist_service) {
     }
 
