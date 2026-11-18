@@ -13,7 +13,8 @@ public:
     MOCK_METHOD(long, calculate, (const int));
 };
 
-extern thread_local dependency_to_fake_mock* current_thread_mock;
+// inline (C++17): Deklaration und Definition in einem, keine .cpp-Definition noetig
+inline thread_local dependency_to_fake_mock* current_thread_mock = nullptr;
 
 class myservice_using_dependency_test : public ::testing::Test {
 protected:

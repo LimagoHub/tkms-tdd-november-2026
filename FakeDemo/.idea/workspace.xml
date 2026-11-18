@@ -34,8 +34,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="388b0ad6-de8d-4d8e-bd44-42edc09bc3df" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeDemoProjekt.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/FakeDemoProjekt.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/globaltest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/globaltest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/myservice_using_dependency_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/myservice_using_dependency_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/myservice_using_dependency_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/tests/myservice_using_dependency_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PersonenServiceProjekt/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PersonenServiceProjekt/.idea/editor.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +53,7 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="407" />
+    <option name="cachedIndexableFilesCount" value="406" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
@@ -61,7 +68,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/LimagoHub/atlas-tdd-januar-2026&quot;,
+    &quot;url&quot;: &quot;https://github.com/LimagoHub/tkms-tdd-november-2026&quot;,
     &quot;accountId&quot;: &quot;6bf0de63-422d-4186-91f9-094d02cf1f08&quot;
   }
 }</component>
@@ -71,6 +78,65 @@
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.002800693843781" />
+      <entry key="MS500" value="1.3086406517233846" />
+      <entry key="S2" value="1.7453551933994602" />
+      <entry key="S5" value="1.889089154852864" />
+      <entry key="S10" value="1.9429152426665208" />
+      <entry key="S30" value="1.980597734288247" />
+      <entry key="S60" value="1.990251349046416" />
+      <entry key="M2" value="1.9951137367388796" />
+      <entry key="M5" value="1.9980426221371275" />
+      <entry key="M10" value="1.9990208316832674" />
+      <entry key="M15" value="1.9993471145457256" />
+      <entry key="M30" value="1.999673503973035" />
+      <entry key="H1" value="1.9998367386593847" />
+      <entry key="H2" value="1.9999183659976372" />
+      <entry key="H4" value="1.999959182165771" />
+      <entry key="D1" value="1.9999931969119245" />
+      <entry key="W1" value="1.9999990281274413" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.011307634797669976" />
+      <entry key="MS500" value="0.5297381793604601" />
+      <entry key="S2" value="1.3900345988750107" />
+      <entry key="S5" value="1.72443966650386" />
+      <entry key="S10" value="1.8562708267056907" />
+      <entry key="S30" value="1.9506969963555216" />
+      <entry key="S60" value="1.9751696750364582" />
+      <entry key="M2" value="1.9875397738632186" />
+      <entry key="M5" value="1.9950050481135007" />
+      <entry key="M10" value="1.9975007099573396" />
+      <entry key="M15" value="1.9983334032185192" />
+      <entry key="M30" value="1.9991664998277299" />
+      <entry key="H1" value="1.9995831994550384" />
+      <entry key="H2" value="1.9997915871111316" />
+      <entry key="H4" value="1.9998957904012586" />
+      <entry key="D1" value="1.9999826312954272" />
+      <entry key="W1" value="1.9999975187457601" />
+    </decayedShown>
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -86,43 +152,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Google Test.LastnameTest.ShouldReturnMockedName.executor": "Run",
-    "Google Test.myservice_using_dependency_test.FirstMethod.executor": "Run",
-    "Google Test.myservice_using_dependency_test.ShouldReturnMockedName.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "RunOnceActivity.west.config.association.type.startup.service": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/JoachimWagner/Documents/git/Atlas/tdd/atlas-tdd-januar-2026/FakeDemo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "CPPToolchains",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
+    &quot;CidrDebugProfileConversion262&quot;: &quot;true&quot;,
+    &quot;Google Test.LastnameTest.ShouldReturnMockedName.executor&quot;: &quot;Run&quot;,
+    &quot;Google Test.demo.mult_demo.executor&quot;: &quot;Run&quot;,
+    &quot;Google Test.myservice_using_dependency_test.FirstMethod.executor&quot;: &quot;Run&quot;,
+    &quot;Google Test.myservice_using_dependency_test.ShouldReturnMockedName.executor&quot;: &quot;Run&quot;,
+    &quot;Google Test.myservice_using_dependency_test.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JoachimWagner/Documents/git/tkms/TDD/tkms-tdd-november-2026/FakeDemo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Google Test.myservice_using_dependency_test.ShouldReturnMockedName">
+}</component>
+  <component name="RunManager" selected="Google Test.demo.mult_demo">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FakeDemoTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" folderName="Tests" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FakeDemo" TARGET_NAME="FakeDemoTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FakeDemo" RUN_TARGET_NAME="FakeDemoTest" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LastnameTest.ShouldReturnMockedName" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FakeDemo" TARGET_NAME="FakeDemoTest" RUN_TARGET_PROJECT_NAME="FakeDemo" RUN_TARGET_NAME="FakeDemoTest" TEST_CLASS="LastnameTest" TEST_METHOD="ShouldReturnMockedName" TEST_MODE="SUITE_TEST">
+    <configuration name="LastnameTest.ShouldReturnMockedName" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FakeDemo" TARGET_NAME="FakeDemoTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FakeDemo" RUN_TARGET_NAME="FakeDemoTest" TEST_CLASS="LastnameTest" TEST_METHOD="ShouldReturnMockedName" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo.mult_demo" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FakeDemo" TARGET_NAME="FakeDemoTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FakeDemo" RUN_TARGET_NAME="FakeDemoTest" TEST_CLASS="demo" TEST_METHOD="mult_demo" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="myservice_using_dependency_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FakeDemo" TARGET_NAME="FakeDemoTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FakeDemo" RUN_TARGET_NAME="FakeDemoTest" TEST_CLASS="myservice_using_dependency_test" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -134,7 +223,7 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="myservice_using_dependency_test.ShouldReturnMockedName" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FakeDemo" TARGET_NAME="FakeDemoTest" RUN_TARGET_PROJECT_NAME="FakeDemo" RUN_TARGET_NAME="FakeDemoTest" TEST_CLASS="myservice_using_dependency_test" TEST_METHOD="ShouldReturnMockedName" TEST_MODE="SUITE_TEST">
+    <configuration name="myservice_using_dependency_test.ShouldReturnMockedName" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FakeDemo" TARGET_NAME="FakeDemoTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="FakeDemo" RUN_TARGET_NAME="FakeDemoTest" TEST_CLASS="myservice_using_dependency_test" TEST_METHOD="ShouldReturnMockedName" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -172,18 +261,69 @@
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="CMake Application.FakeDemo" />
       <item itemvalue="Google Test.FakeDemoTest" />
+      <item itemvalue="Google Test.demo.mult_demo" />
+      <item itemvalue="Google Test.myservice_using_dependency_test" />
       <item itemvalue="Google Test.myservice_using_dependency_test.ShouldReturnMockedName" />
       <item itemvalue="Google Test.LastnameTest.ShouldReturnMockedName" />
       <item itemvalue="Google Test.myservice_using_dependency_test.FirstMethod" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.demo.mult_demo" />
+        <item itemvalue="Google Test.myservice_using_dependency_test.FirstMethod" />
+        <item itemvalue="Google Test.myservice_using_dependency_test" />
         <item itemvalue="Google Test.myservice_using_dependency_test.ShouldReturnMockedName" />
         <item itemvalue="Google Test.LastnameTest.ShouldReturnMockedName" />
-        <item itemvalue="Google Test.myservice_using_dependency_test.FirstMethod" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SelectedDebugProfileService"><![CDATA[{
+  "profileIdByStamp": [
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "Google Test.myservice_using_dependency_test",
+        "cmake": null
+      },
+      "second": "91b0b143-a418-408a-bc4a-2237722141cb"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "Google Test.myservice_using_dependency_test.FirstMethod",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "91b0b143-a418-408a-bc4a-2237722141cb"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "Google Test.demo.mult_demo",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "91b0b143-a418-408a-bc4a-2237722141cb"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "Google Test.myservice_using_dependency_test",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "91b0b143-a418-408a-bc4a-2237722141cb"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "Google Test.myservice_using_dependency_test.ShouldReturnMockedName",
+        "cmake": null
+      },
+      "second": "91b0b143-a418-408a-bc4a-2237722141cb"
+    },
+    {
+      "first": {
+        "##RUN_CONFIGURATION##": "Google Test.myservice_using_dependency_test.ShouldReturnMockedName",
+        "cmake": "CMakeBuildProfile:Debug"
+      },
+      "second": "91b0b143-a418-408a-bc4a-2237722141cb"
+    }
+  ],
+  "modificationCount": 11
+}]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="388b0ad6-de8d-4d8e-bd44-42edc09bc3df" name="Changes" comment="" />
@@ -203,5 +343,6 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+    <isAutomaticBootstrapAfterUpdate value="false" />
   </component>
 </project>
