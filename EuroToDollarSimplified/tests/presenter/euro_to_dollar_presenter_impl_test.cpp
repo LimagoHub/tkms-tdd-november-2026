@@ -11,6 +11,9 @@ void euro_to_dollar_presenter_impl_test::SetUp() {
 
 
 
-
+TEST_F(euro_to_dollar_presenter_impl_test, beenden__happyPath__MaskClosed) {
+    EXPECT_CALL(euro_to_dollar_viewMock, dispose()).Times(1);
+    object_under_test.beenden();
+}
 
 

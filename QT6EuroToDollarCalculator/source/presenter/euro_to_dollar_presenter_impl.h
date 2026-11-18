@@ -66,7 +66,11 @@ public:
             }
             auto dollar = specifiy_format(model_->convert(euro));
             view_->set_dollar(dollar);
-        } catch(std::runtime_error &ex) {
+        } catch(const std::invalid_argument&) {
+            view_->set_dollar("Keine Zahl");
+        } catch(const std::out_of_range&) {
+            view_->set_dollar("Keine Zahl");
+        } catch(const std::runtime_error&) {
             view_->set_dollar("Internal Server Error");
         }
 	}
